@@ -6,6 +6,23 @@
                 position: absolute;
                 top: 0px; left: 0px;
             }
+
+            #github-link {
+                margin: inherit;
+            }
+
+            #github {
+                position: absolute;
+                margin: inherit;
+                width: 3rem; height: 3rem;
+                bottom: 0px; right: 0px;
+            }
+
+            #github:hover {
+                opacity: 0.75;
+                transition-property: opacity;
+                transition-duration: 0.25s;
+            }
         </style>
         <script src="shaders.js"></script>
         <script src="renderer.js"></script>
@@ -13,5 +30,8 @@
     </head>
     <body>
         <canvas id="canvas"></canvas>
+        <a href="https://github.com/voidbert/GameOfLife" id="github-link">
+            <img src="github.png" id="github"></img>
+        </a>
     </body>
 </html>
